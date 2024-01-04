@@ -16,6 +16,7 @@
     width:100vw;
     height:100vh;
     color: var(--colorLight2);
+    overflow-y:auto ;
     background-image: linear-gradient(160deg, #D8E6E8 0%, #cfe8ec 100%);;
 
 }
@@ -68,6 +69,10 @@ h1 {
 
 .weather-container{
     margin-block:4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .btn{
@@ -290,4 +295,20 @@ h1 {
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
+}
+
+
+.errorContainer{
+    display: none;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 200px;
+    max-width: 300px;
+    gap: 1rem 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.errorContainer.active{
+    display: flex;
 }
